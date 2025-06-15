@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body class="bg-fixed min-h-screen m-0 bg-gradient-to-br from-black via-gray-700 to-purple-700">
 
    <div class="max-w-7xl mx-auto px-4">
-  <!-- Sticky Navbar inside container -->
+  <!--  Navbar  -->
   <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-lg rounded-b-lg shadow-md text-white">
   <div class="flex items-center justify-between py-4 px-6">
     <a href="gallery.php" class="flex items-center space-x-2">
@@ -86,6 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="mt-16 flex justify-center">
         <div class="w-full max-w-md p-6 bg-gray-900 rounded-2xl shadow-lg">
     <h2 class="text-2xl font-bold mb-6 text-center text-purple-500">Registrace uživatele</h2>
+     <!-- Formulář karta -->
     <form action="../../controllers/register.php" method="POST" class="space-y-4">
       <div>
         <label for="username" class="block text-sm font-medium text-white">Username *</label>

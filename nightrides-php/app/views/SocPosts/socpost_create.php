@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
 <body class="bg-fixed min-h-screen m-0 bg-gradient-to-br from-black via-gray-700 to-purple-700">
 
    <div class="max-w-7xl mx-auto px-4">
-  <!-- Sticky Navbar inside container -->
+  <!-- Navbar -->
   <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-lg rounded-b-lg shadow-md text-white">
   <div class="flex items-center justify-between py-4 px-6">
     <a href="../common/gallery.php" class="flex items-center space-x-2">
@@ -70,7 +70,7 @@ if (!isset($_SESSION['user_id'])) {
     <div class="text-center mb-6">
       <h2 class="text-3xl font-bold text-purple-500">New Post</h2>
     </div>
-
+ <!-- Formulář pro socpost Create -->
     <form action="../../controllers/SocPostController.php" method="post" enctype="multipart/form-data" class="space-y-5">
       
       <div>
@@ -104,7 +104,7 @@ if (!isset($_SESSION['user_id'])) {
   </div>
 </div>
 </div>
-
+ <!-- Script pro navbar -->
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');

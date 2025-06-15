@@ -67,11 +67,11 @@ $socposts = $socpostModel->getAll(12); // Fetch last 12 posts
     </div>
   </nav>
 
-  <!-- Page Content -->
+  <!-- Start text -->
   <div class="mt-12 space-y-8">
     <h1 class="text-4xl font-bold text-white">Welcome to the Gallery!</h1>
     <p class="text-gray-300">You can watch latest posts from users across the platform.</p>
-    <!-- Gallery Section -->
+    <!-- Gallerie -->
     <div class="mt-10">
       <h2 class="text-2xl font-semibold text-white mb-6">Latest 12 Posts</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -80,7 +80,7 @@ $socposts = $socpostModel->getAll(12); // Fetch last 12 posts
             <a href="../SocPosts/socpost_detail.php?id=<?php echo urlencode($post['id']); ?>" class="block hover:scale-105 transition-transform duration-200">
             <div class="bg-gray-900 bg-opacity-90 rounded-lg shadow-lg p-5 flex flex-col border border-gray-800 hover:border-purple-700 transition-colors">
               <?php
-                // Handle multiple images (comma-separated)
+                // Handle images
                 $imagePaths = array_filter(explode(',', $post['images'] ?? ''));
                 foreach ($imagePaths as $img):
                   $img = trim($img, "\" \t\n\r\0\x0B[]"); // Remove quotes/brackets
@@ -99,7 +99,7 @@ $socposts = $socpostModel->getAll(12); // Fetch last 12 posts
         <?php endif; ?>
       </div>
     </div>
-    <!-- End Gallery Section -->
+    <!-- Konec Galerie -->
     <div class="h-[1500px]"></div>
   </div>
 </div>

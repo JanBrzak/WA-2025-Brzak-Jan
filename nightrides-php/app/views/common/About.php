@@ -1,5 +1,5 @@
 <?php
-session_start(); // Required for user session in navbar
+session_start(); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ session_start(); // Required for user session in navbar
 </head>
 <body class="bg-fixed min-h-screen m-0 bg-gradient-to-br from-black via-gray-700 to-purple-700">
 <div class="max-w-4xl mx-auto px-4">
-  <!-- Navbar (reuse unified navbar) -->
+  <!-- Navbar  -->
   <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-lg rounded-b-lg shadow-md text-white mb-8">
     <div class="flex items-center justify-between py-4 px-6">
       <a href="gallery.php" class="flex items-center space-x-2">

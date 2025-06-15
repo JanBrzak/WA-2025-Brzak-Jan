@@ -14,12 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-black via-gray-700 to-purple-700 flex items-center justify-center p-6">
-
+ <!-- Basic text -->
   <div class="flex flex-col items-center space-y-8 max-w-5xl w-full">
     <h1 class="font-bold text-white text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug sm:leading-tight">
       HELLO PETROLHEADS, THIS IS A WEBPAGE FOR SHARING YOUR EXPERIENCE FROM CAR EVENTS, MEETS, AND LATE NIGHT RIDES
     </h1>
-
+     <!-- redirect button -->
     <form method="POST" class="w-full flex justify-center">
       <button
         type="submit"
